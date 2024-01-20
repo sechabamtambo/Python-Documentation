@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Documenation</title>
+</head>
+<body>
+    <div class="info">
+        <nav id="navbar">
+            <header>Python Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#What_is_python?">What is Python?</a></li>
+                <li><a class="nav-link" href="#Comments">Comments</a></li>
+                <li><a class="nav-link" href="#Variables">Variables</a></li>
+                <li><a class="nav-link" href="#Data_types">Data Types</a></li>
+                <li><a class="nav-link" href="#Strings">Strings</a></li>
+                <li><a class="nav-link" href="#Booleans">Booleans</a></li>
+                <li><a class="nav-link" href="#Operators">Operators</a></li>
+                <li><a class="nav-link" href="#If...Else">If...Else</a></li>
+                <li><a class="nav-link" href="#While_Loops">While Loops</a></li>
+                <li><a class="nav-link" href="#For_Loops">For Loops</a></li>
+                <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+                <li><a class="nav-link" href="#Reference">Reference</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main id="main-doc">
+        <section class="main-section" id="What_is_python?">
+            <header>What is Python?</header>
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+            <p>It is used for:</p>
+            <ul>
+                <li>web development (server-side),</li>
+                <li>software development,</li>
+                <li>mathematics,</li>
+                <li>system scripting.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Comments">
+            <header>Comments</header>
+            <article>
+                <p>Comments can be used to explain Python code.</p>
+                <p>Comments can be used to make a code more readable.</p>
+                <p>Comments can be used to prevent execution when testing code.</p>
+                <header>Creating a Comment:</header>
+                <p>Comments starts with a <span>#</span>, and Python will ignore them:</p>
+                <code>
+                    <strong>Example</strong> <br>
+                    <span>#</span>This is a comment <br>
+                    print("Hello, World!")
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>Variables are containers for storing data values.</p>
+                <header>Creating Variables</header>
+                <p>Python has no command for declaring a variable.</p>
+                <code>
+                    <strong>Example</strong>
+                    <hr>
+                    x = 5 <br>
+                    name = "John" <br>
+                    print(x) <br>
+                    print(name)
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+            <article>
+                <p>In programming, data type is an important concept.</p>
+                <p>Variables can store data of different types, and different types can do different things.</p>
+                <header>Getting the Data Type</header>
+                <p>You can get the data type of any object by using the <span>type()</span> function:</p>
+                <code>
+                    <strong>Example</strong> <br>
+                    <hr>
+                    Print the data type of the variable: <br>
+                    x = 5 <br>
+                    y = "John" <br>
+                    print(type(x)) <br>
+                    print(type(y))
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Strings">
+            <header>Strings</header>
+            <article>
+                <p>Strings in python are surrounded by either single quotation marks, or double quotation marks.</p>
+                <p><span>"hello"</span> is the same as <span>'hello'</span></p>
+                <code>
+                    <strong>Example</strong>
+                    <hr>
+                    print("hello") <br>
+                    print('hello')
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Booleans">
+            <header>Booleans</header>
+            <article>
+                <p>Booleans represent one of two values:</p>
+                <ul>
+                    <li><span>True</span></li>
+                    <li><span>False</span></li>
+                </ul>
+                <code>
+                    <strong>Example</strong> <br>
+                    print(10 > 9) == True <br>
+                    print(10 == 9) == False <br>
+                    print(10 < 9) == False
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Operators">
+            <header>Operators</header>
+            <article>
+                <p>Operators are used to perform operations on variables and values.</p>
+                <p>In the example below, we use the <span>+</span> operator to add together two values:</p>
+                <code>
+                    <strong>Example</strong> <br>
+                    print(10 + 5)
+                </code>
+                <p>Python divides Operators in the following groups:</p>
+                <ul>
+                    <li>Arithmetic operators</li>
+                    <li>Assignment operators</li>
+                    <li>Comparison operators</li>
+                    <li>Logical operators</li>
+                    <li>Identity operators</li>
+                    <li>Membership operators</li>
+                    <li>Bitwise operators</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="If...Else">
+            <header>If...Else</header>
+            <article>
+                <p>Python supports the usual logical conditions from mathematics:</p>
+                <ul>
+                    <li>Equals:<span> a == b</span></li>
+                    <li>Not Equals:<span> a != b</span></li>
+                    <li>Less than:<span> a < b</span></li>
+                    <li>Less than or equal to:<span> a <= b</span></li>
+                    <li>Greater than:<span> a > b</span></li>
+                    <li>Greater than or equal to:<span> a > b</span></li>
+                    <code>
+                        <strong>Example</strong>
+                        a = 33 <br>
+                        b = 200 <br>
+                        if b > a: <br>
+                             print("b is greater than a")
+                    </code>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="While_Loops">
+            <header>While Loops</header>
+            <p>Python has two primitive loop commands:</p>
+            <ul>
+                <li><span>while</span> loops</li>
+                <li><span>for</span> loops</li>
+            </ul>
+            <p>With the <span>while</span> loop we can execute a set of statements as long as a condition is true.</p>
+        </section>
+        <section class="main-section" id="For_Loops">
+            <header>For Loops</header>
+            <article>
+                <p>A <span>for</span> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+                <p>This is less like the <span>for</span> keyword in other programming languages, and works more like an iterator method as found in other object- <br>
+                    orientated programming languages.
+                </p>
+                <p>With the <span>for</span>  loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Arrays">
+            <header>Arrays</header>
+            <article>
+                <p>An array is a special variable, which can hold more than one value at a time.</p>
+                <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+                <code>
+                    car1 = <span>"Mercedes Benz"</span> <br>
+                    car2 = <span>"BMW"</span> <br>
+                    car3 = <span>"FORD"</span>
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>All the documentation in this page is taken from</li>
+                </ul>
+                <a href="https://www.w3schools.com/python/default.asp">w3schools</a>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
